@@ -1,0 +1,45 @@
+html {
+	background:	#e6e9e9;
+}
+
+header {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	background-color: blue;
+	max-width: 1000px;
+}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15px;
+	color: black;
+	background-color: rgb(255,255,255);
+	max-width: 1000px;
+}
+
+h1 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 20px;
+	color: black;
+	background-color: rgb(230, 230, 230);
+	max-width: 250px;
+}
+
+nav > ul {
+	color: black;
+	line-height: 1em;
+}
+
+section {
+	background-color: rgb(192, 192, 192);
+}
+
+footer {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 15px;
+	color: black;
+	background-color: rgb(146,148,155);
+	max-width: 1000px;
+	line-height: 1em;
+}
