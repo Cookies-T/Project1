@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas: "header	header"
+						 "nav		nav"
+						 "about		logo"
+						 "footer	footer";
+	grid-column-gap: 15px;
+	background-color: cyan;
+}
+
+body > header {
+	grid-row: 1;
+	grid-column: 1/-1;
+	background-color: rgb(209, 209, 209);
+}
+
+/*body > * {
+	outline: 2px dashed red;
+}
+
+section > * {
+	outline: 2px dashed blue;
+}*/
+
+body > article {grid-area: nav;}
+body > aside {grid-area: logo;}
+body > section {grid-area: about;}
+body > footer {grid-area: footer;}
+
+/* Grid Styles for Nested Grid */
+section {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+section > h1 {
+	grid-area: 1/1/2/3;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Lucida Console', Monaco, monospace;
+}
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+nav {
+	background-color: rgb(72, 83, 240);
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding: 10px 0px;
+}
+
+li {
+	text-align: left;
+	display: inline;
+}
+
+li a {
+	padding: 9px 116px;
+}
+
+li a:hover {
+	/*background-color: blue;*/
+	color: black;
+}
+
+div#outer {
+	display: grid;
+	grid-template-columns: 1000px 450px;
+	grid-template-rows: 175px 175px 175px;
+	grid-gap: 50px 50px;
+	/*grid gap: row, column*/
+}
+
+div#item1 {
+	grid-row: 2;
+	grid-column: 1;
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: rgb(209, 209, 209);
+	color: white;
+}
+
+div#item2 {
+	grid-row: 1;
+	grid-column: 2;
+	background-color: cyan;
+	text-align: center;
+}
+
+footer > section#footer {
+	text-align: left;
+	background-color: gray;
+}
