@@ -2,15 +2,33 @@
 CSS for Project
 */
 
+/* HTML and Body Styles */
+html {
+    background-color: coral;
+}
 body {
-    background-color: ghostwhite;
+    background-color: peachpuff;
     font-family: Segoe, Verdana, sans-serif;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
     min-width: 640px;
+    width: 95%;
 }
 
+body > article#top {
+    background-color: darkorange;
+}
+
+body > article#bottom {
+    background-color: beige;
+}
+
+body > article#freeTime {
+    background-color: goldenrod;
+}
+
+/* Header Styles */
 h1 {font-size: 2.5em;}
 h2 {font-size: 2.2em;}
 h3 {font-size: 1.5em;}
@@ -20,29 +38,98 @@ h1, h2, h3 {
     letter-spacing: 0.1em;
 }
 
+body > header > nav.horizontalNavigation li {
+    width: 25%;
+}
+
+/* Nav Styles */
+nav {font-size: 0.8em;}
+
 nav > ul {
-    background-color: moccasin;
+    background-color: mintcream;
     line-height: 2em;
     width: 100%;
     float: left;
     margin: 0 auto;
     list-style-type: none;
-    padding: 0;
+    padding-left: 0px;
 }
 
-ol {
-    background-color: blanchedalmond;
-    width: auto;
+nav > ul > li > a:link, nav > ul > a:visited {
+    color: rgb(151, 151, 151);
+    text-decoration: none;
 }
 
-section {
-    background-color: lavender;
-    width: 100%;
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    color: rgb(255, 64, 255);
+    text-decoration: underline;
+}
+
+/* Horizontal Nav Styles */
+nav.horizontalNavigation li {
+    display: block;
     float: left;
 }
 
+nav.horizontalNavigation a {
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    font-family: Champagne, cursive;
+}
+
+/* Left Column Styles */
+
+section#leftColumn {
+    clear: left;
+    float: left;
+    padding: 1.5em;
+    width: 40%;
+    background-color: lavender;
+    text-align: center;
+}
+
+/* Right Column Styles */
+
+section#rightColumn {
+    float: left;
+    width: 54%;
+    background-color: lemonchiffon;
+    margin: 0;
+    padding: 0 9px 48px 0;
+    text-align: center;
+}
+
+/* List Styles */
+body > article#school {
+    width: 90%;
+    float: left;
+    margin: 0 3% 0 3%;
+}
+
+body > article#school img {
+    float: right;
+    width: 40%;
+    margin: 0px 0 10px 10px;
+}
+
+article#freeTime ol li:first-of-type {
+    list-style-image: url(fun.png);
+}
+
+article#freeTime ol li:nth-of-type(2) {
+    list-style-image: url(fix.png);
+}
+
+article#freeTime ol li:last-of-type {
+    list-style-image: url(games.png);
+}
+
+/* Footer Styles */
 footer {
-    background-color: silver;
+    clear: left;
+    background-color: ghostwhite;
     color: dodgerblue;
     text-align: center;
     width: 100%;
